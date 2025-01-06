@@ -872,8 +872,8 @@ if (isset($_POST["send"])) {
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                       // Set the SMTP server
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'anmolaasim98@gmail.com';                  // Your Gmail address
-        $mail->Password   = 'gobkdrdpmlvfevno';                     // Your Gmail app password
+        $mail->Username   = '';                  // Your Gmail address
+        $mail->Password   = '';                     // Your Gmail app password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            // Use SSL encryption
         $mail->Port       = 465;                                    // TCP port to connect
 
