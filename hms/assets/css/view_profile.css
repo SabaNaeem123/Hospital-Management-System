@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(280deg, rgb(247, 247, 247) 0%, rgb(226, 43, 15) 1%, rgb(195, 26, 10) 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    max-width: 850px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(234, 78, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-name {
+    margin-left: 30px;
+}
+
+.profile-name h2 {
+    margin: 0;
+    font-size: 28px;
+    color: rgb(195, 26, 10);
+    font-weight: bold;
+}
+
+.profile-name p {
+    margin: 8px 0 0;
+    font-size: 18px;
+    color: #666;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.profile-field {
+    flex: 1;
+    min-width: 350px;
+    margin: 10px;
+    background-color: rgb(234, 78, 55);
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.profile-field p {
+    margin: 12px 0;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.profile-field strong {
+    color: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.edit-icon {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.edit-icon:hover {
+    color: #eee;
+}
+
+/* General Button Styling */
+button {
+    background: linear-gradient(45deg, #F37021, #D32F2F);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(195, 26, 10);
+}
+
+/* Profile container responsive */
+@media screen and (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-name {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-field {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

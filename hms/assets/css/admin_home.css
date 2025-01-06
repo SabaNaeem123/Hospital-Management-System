@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+}
+
+.dashboard-container {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #f37021;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #b71c1c;
+}
+
+.actions {
+  background-color: #1e1e1e;
+  width: 20%;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.actions h3 {
+  background-color: rgb(234, 78, 55);
+  color: white;
+  margin-bottom: 60px;
+  text-align: left;
+  padding: 15px;
+  width: 110%;
+}
+
+.actions a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 100%;
+  text-align: left;
+}
+
+.actions a:hover {
+  color: rgb(195, 26, 10);
+}
+
+.actions a.active {
+  color: rgb(234, 78, 55);
+  font-weight: bold;
+  border-bottom: 2px solid #f37021;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-btn,
+.logout-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.user-btn {
+  position: absolute;
+  right: 7em;
+  color: #16243c;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(234, 78, 55);
+}
+.user-btn:hover {
+  background-color: #ffe5b4;
+}
+.user-btn i {
+  font-size: 20px;
+}
+
+.logout-btn {
+  position: absolute;
+  right: 1em;
+  top: 1.25em;
+  background: linear-gradient(
+    280deg,
+    rgb(247, 247, 247) 0%,
+    rgb(234, 78, 55) 1%,
+    rgb(195, 26, 10) 100%
+  );
+  text-decoration: none;
+}
+
+p {
+  font-size: 18px;
+  color: #333333;
+}

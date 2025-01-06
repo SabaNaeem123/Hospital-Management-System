@@ -1,0 +1,102 @@
+/* Styling for the table */
+table {
+    width: 70%;
+    border-collapse: collapse;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: #f9f9f9; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+/* Table header styling */
+th {
+    background: linear-gradient(
+        280deg,
+        rgb(247, 247, 247) 0%,
+        rgb(226, 43, 15) 1%,
+        rgb(195, 26, 10) 100%
+    ); 
+    color: white; 
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 16px;
+    text-transform: uppercase; 
+}
+
+/* Table row styling */
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; 
+    font-size: 14px;
+}
+
+/* Alternate row background */
+tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+/* Hover effect for rows */
+tr:hover {
+    background-color: #f5f5f5; 
+}
+
+/* Styling for buttons */
+.btn {
+    padding: 6px 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+}
+
+/* Icon styling */
+.btn i {
+    margin-right: 5px; 
+}
+
+/* Edit button */
+.edit-btn {
+    background-color: rgb(234, 78, 55); 
+}
+
+.edit-btn:hover {
+    background-color: #d95e1b; 
+}
+
+/* Delete button */
+.delete-btn {
+    background: linear-gradient(
+        280deg,
+        rgb(247, 247, 247) 0%,
+        rgb(226, 43, 15) 1%,
+        rgb(195, 26, 10) 100%
+    );
+}
+
+.delete-btn:hover {
+    background: linear-gradient(
+        280deg,
+        rgb(255, 255, 255) 0%,
+        rgb(206, 43, 15) 1%,
+        rgb(165, 26, 10) 100%
+    ); 
+}
+
+/* Styling for the table header */
+h2 {
+    color: rgb(195, 26, 10);
+    margin-right: 20em;
+    margin-top: 5em;
+    font-family: Arial, sans-serif;
+    text-align: center; 
+    font-size: 28px; 
+}
